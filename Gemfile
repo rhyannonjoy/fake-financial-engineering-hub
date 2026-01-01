@@ -1,7 +1,8 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-# to publish on github page
+# Use github-pages gem for GitHub Pages compatibility
 gem 'github-pages', group: :jekyll_plugins
+gem 'webrick', '~> 1.8'
 
-# to publich without github page
-#gem "jekyll"
+# Just the Docs theme
+gem 'just-the-docs'
