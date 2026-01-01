@@ -3,3 +3,10 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Ruby/Bundler
+.bundle/
+vendor/
+
+# OS files
+.DS_Store
