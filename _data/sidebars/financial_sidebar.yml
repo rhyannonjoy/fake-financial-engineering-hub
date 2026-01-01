@@ -1,0 +1,14 @@
+entries:
+- title: sidebar
+  product: Financial Engineering
+  folders:
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Home
+      url: /index.html
+      output: web
+    - title: System Architecture
+      url: /architecture.html
+      output: web
+  # ... add your structure
