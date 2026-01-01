@@ -2,7 +2,9 @@
 title: Fake Financial Engineering Hub
 description: Technical documentation for financial systems engineering at Fake Company, Inc.
 url: https://rhyannonjoy.github.io
-baseurl: /fake-financial-engineering-hub
+# Test locally at "http://localhost:4000/fake-financial-engineering-hub/"
+# Alternative option: change baseurl: "" but revert before deploying
+baseurl: "/fake-financial-engineering-hub"
 
 # Theme
 remote_theme: just-the-docs/just-the-docs
@@ -25,6 +27,9 @@ footer_content: "© 2025 Fake Company, Inc. | This is a portfolio project with f
 aux_links:
   "View on GitHub":
     - "https://github.com/rhyannonjoy/fake-financial-engineering-hub"
+
+# Disable auto-generated navigation title link
+aux_links_new_tab: true
 
 # Build settings
 markdown: kramdown
