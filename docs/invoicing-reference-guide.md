@@ -172,7 +172,7 @@ GET request /manual/run/monthlyFailedRequests?yearMonth=2024-02&limit=100
 
 View `pending_invoice_request_id` and `unique_id` side-by-side:
 
-```SQL
+```sql
 select id as pending_invoice_request_id,
     JSON_EXTRACT(payload, '$.uniqueId') as unique_id
 from tblpending_invoice_request
@@ -188,7 +188,7 @@ order by unique_id;
 - Look for ARS invoices from the migrated ICA accounts, visit ICA-306
 - _Note_: Invoicing decommissioned ARS in 11/2024
 
-```SQL
+```sql
 select *
 from tblinvoices i
         inner join tblsummary_advertiser 
@@ -201,7 +201,7 @@ where sa.billing_country in ('IN', 'IT', 'MX', 'BR', 'AU')
  and invoice_type in ('POSTPAY_CC', 'POSTPAY_INVOICE');
 ```
 
-```SQL
+```sql
 select i.id, i.account_id
 from tblinvoices i
          join tblinvoice_products 
@@ -220,7 +220,7 @@ The query below selects all accounts that have many MIP invoices for `product_id
 5, 7, 9, 22 - what automatic MIP processes control. Take each row and check if there
 are many tools that created an invoice using `tblinvoice_unique_ids`:
 
-```SQL
+```sql
 select i.account_id,
        ip.product_id,
        ip.loc_id,
@@ -238,7 +238,7 @@ having num_invoices > 1;
 
 #### Failed Invoice Requests 
 
-```SQL
+```sql
 select *
 from tblpending_invoice_request
 where status != 'COMPLETED' 
@@ -248,7 +248,7 @@ order by id desc;
 
 #### Select Specific Error Messages
 
-```SQL
+```sql
 select *
 from tblpending_invoice_request
 where status in ('FAILED', 'REQUEST_FAILED')
@@ -266,7 +266,7 @@ creating a `SUPPORT` ticket, here is any example: `SUPPORT-17727`
 **Source**: Slack `#ops-eom-supports`, Event Remediation for `EVNT-4711` and resolved by
 `ICA-398` and `DRS-62`
 
-```SQL
+```sql
 SELECT * FROM tblinvoice_lines il
 join tblinvoices i ON il.invoice_id = i.id
 WHERE il.line_description LIKE '%�%' AND il.date_modified 
@@ -278,7 +278,7 @@ group by il.line_product;
 
 **Source**: Slack `#ops-eom-supports`, Event Remediation for `EVNT-4711`
 
-```SQL
+```sql
 select * from  tblinvoices
 where date_created > '2023-07-01 00:00:00'
 and invoice_date > '2023-06-01 00:00:00'
@@ -287,7 +287,7 @@ and invoice_date < '2023-06-30 00:00:00';
 
 #### Uninvoiced Records
 
-```SQL
+```sql
 select *
 from tblproduct_revenue
 where state = 'UNINVOICED'
@@ -394,16 +394,17 @@ and recon
 
 Produce an analysis if necessary. Use the query below to complete the following script:
 
-```SQL
-select count(*) as num_created, max(date_created) as finished_at
-from tblinvoices
+```sql
+select count(*) as num_created, max(date_created) as finished_at from tblinvoices
 where billing_platform_version = 1
  and month(invoice_date) < month(now())
  and date_created >= DATE_FORMAT(NOW(), '%Y-%m-01');
 ```
 
-_“Internal invoice creation has been completed for MIP. We have created <num_created>
-Intacct invoices and completed at <finished_at CT> cc: @senior_mgmt”_
+```shell
+Internal invoice creation has been completed for MIP. We have created <num_created>
+Intacct invoices and completed at <finished_at> CT. cc: @senior_mgmt
+```
 
 ---
 
