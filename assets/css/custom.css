@@ -1,0 +1,38 @@
+/* Better inline code styling for dark theme - apply EVERYWHERE */
+code {
+  background-color: #2d2d2d !important;
+  color: #7dd3fc !important;  /* Same light blue as table code */
+  border: 1px solid #3b82f6 !important;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
+  font-size: 0.9em !important;
+}
+
+/* Also target code inside paragraphs, lists, and other elements */
+p code,
+li code,
+td code,
+th code,
+div code,
+span code {
+  background-color: #2d2d2d !important;
+  color: #7dd3fc !important;
+  border: 1px solid #3b82f6 !important;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
+}
+
+/* Keep syntax highlighting for code blocks (multi-line code) */
+pre code {
+  background-color: transparent !important;
+  color: inherit !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* Ensure table code also gets the styling (redundant but safe) */
+table code {
+  background-color: #2d2d2d !important;
+  color: #7dd3fc !important;
+  border: 1px solid #3b82f6 !important;
+}
