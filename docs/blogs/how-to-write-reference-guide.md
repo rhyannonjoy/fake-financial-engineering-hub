@@ -11,7 +11,7 @@ nav_order: 3
 
 ## Description and Objective
 
-This piece reflects on creating operational documentation for a colossal monthly-invoicing
+In this piece I reflect on creating operational documentation for a colossal monthly-invoicing
 process while working as a bootcamp-grad on a fintech engineering team. The goal is to
 share lessons learned about consolidating scattered, tacit knowledge into searchable,
 maintainable documentation that serves both current team members and future engineers.
