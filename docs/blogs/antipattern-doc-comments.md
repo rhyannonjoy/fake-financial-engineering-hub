@@ -9,7 +9,7 @@ nav_order: 1
 
 ## Description and Objective
 
-This piece was a contribution to the Platform Engineering Guild initiative to set company-wide code and documentation quality standards. The goal is to explain why poor documentation is harmful for codebases and provides actionable recommendations for improvement. The writing process involved gathering existing code quality standards, adapting themes to a blog-like format, and collaborating with engineers across teams.
+This piece was a contribution to the Platform Engineering Guild's initiative to set company-wide code and documentation quality standards. The goal is to explain why poor documentation is harmful for codebases and provides actionable recommendations for improvement. The writing process involved gathering existing code quality standards, adapting themes to a blog-like format, and collaborating with engineers across teams.
 
 ---
 
@@ -17,8 +17,8 @@ This piece was a contribution to the Platform Engineering Guild initiative to se
 
 - [Why it's a Bad Pattern](#why-its-a-bad-pattern)
 - [Examples of the Problem](#examples-of-the-problem)
-- [Best Pattern(s)](#best-patterns)
-- [Examples of the Best Pattern(s)](#examples-of-the-best-patterns)
+- [Best Patterns](#best-patterns)
+- [Examples of the Best Patterns](#examples-of-the-best-patterns)
 - [Summary](#summary)
 
 ---
@@ -43,53 +43,57 @@ This piece was a contribution to the Platform Engineering Guild initiative to se
 
 ### Examples of the Problem
 
-Popular documentation strategies include inline multi-line remarks that risk adding noise, not context. For example, using [Javadoc](https://en.wikipedia.org/wiki/Javadoc) comments can be an effective strategy to ease cognitive load, but if you’re not using this real estate to provide meaningful information, you’re just creating noise. Using the Javadoc structure to produce a parameter list without description ends up looking like unintended code duplication.
+1. **Noisy Javadoc Comments**
 
-```java
-/**
- * Method to create a subscription invoice. This method calls another
- * service and records the invoice generation to table_invoice_requests
- * reporting in that service
- * 
- * @param customerId
- * @param invoiceDate
- * @param startDate
- * @param endDate
- * @param productId
- * @param amount
- * @param description
- * @param uniqueId
- * @return response message that is displayed to the user
- */
+   Popular documentation strategies include inline multi-line remarks that risk adding noise, not context. For example, using [Javadoc](https://en.wikipedia.org/wiki/Javadoc) comments can be an effective strategy to ease cognitive load, but if you’re not using this real estate to provide meaningful information, you’re just creating noise. Using the Javadoc structure to produce a parameter list without description ends up looking like unintended code duplication.
 
-public String createSubscriptionInvoice (
-    final int customerId,
-    final LocalDate invoiceDate,
-    final LocalDate startDate,
-    final LocalDate endDate,
-    final int productId,
-    final double amount,
-    final String description,
-    final String uniqueId) {
+   ```java
+   /**
+    * Method to create a subscription invoice. This method calls another
+   * service and records the invoice generation to table_invoice_requests
+   * reporting in that service
+   * 
+   * @param customerId
+   * @param invoiceDate
+   * @param startDate
+   * @param endDate
+   * @param productId
+   * @param amount
+   * @param description
+   * @param uniqueId
+   * @return response message that is displayed to the user
+   */
+
+   public String createSubscriptionInvoice (
+     final int customerId,
+     final LocalDate invoiceDate,
+     final LocalDate startDate,
+     final LocalDate endDate,
+     final int productId,
+     final double amount,
+     final String description,
+     final String uniqueId) {
         ...
-```
+   ```
 
-Beware of orphaned [TODO tasks](https://www.jetbrains.com/help/idea/using-todo.html). Inline commenting is only encouraged for areas involving edge case handling, short-span fixes, product quirks and magic numbers or constants that require a quick explanation.
+2. **TODO Littering**
 
-```java
-// TODO: remove this
-// TODO: I should not set this here, like this. Should just return the ID.
+   Beware of orphaned [TODO tasks](https://www.jetbrains.com/help/idea/using-todo.html). Inline commenting is only encouraged for areas involving edge case handling, short-span fixes, product quirks and magic numbers or constants that require a quick explanation.
 
-// TODO server side validation and rerendering is a little odd, consider
-// JavaScript front-end validation
-```
+   ```java
+   // TODO: remove this
+   // TODO: I should not set this here, like this. Should just return the ID.
 
-These `TODO` tasks are marginally more valuable than the first. We have some direction, but no meaningful explanation as to why the current implementation is not preferred. We’ve made the effort to create a `TODO` task without successfully passing responsibility. The codebase is now littered with orphaned `TODO` tasks, creating unnecessary IDE warning noise, making identifying and solving bugs harder. Documentation smells like
-this can snowball fast. Outdated service documentation recently led to an internal event, which introduced breaking changes to 162+ projects.
+   // TODO server side validation and rerendering is a little odd, consider
+   // JavaScript front-end validation
+   ```
+
+   These `TODO` tasks are marginally more valuable than the first. We have some direction, but no meaningful explanation as to why the current implementation is not preferred. We’ve made the effort to create a `TODO` task without successfully passing responsibility. The codebase is now littered with orphaned `TODO` tasks, creating unnecessary IDE warning noise, making identifying and solving bugs harder. Documentation smells like
+   this can snowball fast. Outdated service documentation recently led to an internal event, which introduced breaking changes to 162+ projects.
 
 ---
 
-### Best Pattern(s)
+### Best Patterns
 
 1. **Write for future-you, but not only future-you.**
    - Aim away from implicit knowledge and be as literal, explicit as possible.
@@ -111,7 +115,7 @@ this can snowball fast. Outdated service documentation recently led to an intern
 
 ---
 
-### Examples of the Best Pattern(s)
+### Examples of the Best Patterns
 
 If you’re writing a repository `README`, aim to be comprehensive but not exhaustive. Strive to create a user-friendly onboarding experience. Include an introduction to the project with visuals and text. Offer clarity around various entry points such as quickly contributing code and how one might respond to an outage. Seek to produce content that remains practical and lean circumstantially agnostic. Ensure that if you’re new to the project, this content is a great place to start and that if you’re a site reliability engineer responding to an issue, this is also a great place to start.
 
