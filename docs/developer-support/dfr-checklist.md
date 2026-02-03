@@ -1,8 +1,8 @@
 ---
 layout: default
 title: DFR Checklist
+parent: Developer Support
 nav_order: 2
-has_children: true
 ---
 
 # DFR Checklist
@@ -158,7 +158,8 @@ within an hour and will be addressed in the database migration
 
 ## MIP Tasks
 
-MIP, the last couple of days of each month, are a heightened
+MIP encompasses the last couple of days of each month through
+business day two of the next month; this period is a heightened
 monitoring period, ensure to:
 
 - Increase monitoring frequency, _hourly checks instead of daily_
@@ -177,26 +178,4 @@ _must be tracked_
 
 ---
 
-## Related Documentation
-
-**Essential Resources**:
-
-- How to Create and Maintain API Keys
-- How to Retry Failed Invoice Requests
-- Developer First Responder Process
-- Getting Ready for On-Call (PagerDuty Setup)
-
-**Reference Materials**:
-
-- IPS Onboarding Guide
-- IPS Architecture Overview
-- Incident Response Playbook
-- IPS Runbook
-
-**Calendars & Schedules**:
-
-- IPS DFR Rotation Calendar
-
----
-
-_Last updated: [2026-02-02] | Maintained by: IPS Team @ Fake Company, Inc._
+Last updated: 2026-02-02 | Maintained by: IPS Team @ Fake Company, Inc.
