@@ -1,3 +1,10 @@
+---
+layout: default
+title: Invoicing Reference Guide
+nav_order: 3
+has_children: true
+---
+
 # Invoicing Reference Guide
 
 This documentation is a comprehensive operational guide for the DFR - developer first responder -

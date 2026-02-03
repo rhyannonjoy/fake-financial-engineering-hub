@@ -1,0 +1,25 @@
+<!-- Mermaid Diagram Support -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js"></script>
+<script>
+  console.log('Mermaid script loaded!'); // ADD THIS LINE TO TEST
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, initializing Mermaid...'); // ADD THIS LINE TO TEST
+    mermaid.initialize({ 
+      startOnLoad: true,
+      theme: 'dark',
+      themeVariables: {
+        darkMode: true,
+        background: '#1c1c1e',
+        primaryColor: '#2c84fa',
+        primaryTextColor: '#fff',
+        primaryBorderColor: '#444',
+        lineColor: '#666',
+        secondaryColor: '#444',
+        tertiaryColor: '#2c2c2e'
+      }
+    });
+  });
+</script>
+
+<!-- Custom CSS for better code styling -->
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">

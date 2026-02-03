@@ -3,12 +3,27 @@ title: Fake Financial Engineering Hub
 description: Technical documentation for financial systems engineering at Fake Company, Inc.
 url: https://rhyannonjoy.github.io
 # Test locally at "http://localhost:4000/fake-financial-engineering-hub/"
+# Use Terminal commands: rm -rf _site .jekyll-cache, bundle exec jekyll serve
 # Alternative option: change baseurl: "" but revert before deploying
 baseurl: "/fake-financial-engineering-hub"
 
 # Theme
 remote_theme: just-the-docs/just-the-docs
 color_scheme: dark
+
+# Enable custom CSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Point to custom stylesheet (add this line)
+custom_css_path: /assets/css/custom.scss
+
+# Add custom stylesheet
+custom_head: true
+
+plugins:
+  - jekyll-sass-converter
 
 # Navigation
 nav_enabled: true
@@ -21,7 +36,7 @@ search:
   preview_words_after: 10
 
 # Footer content
-footer_content: "© 2025 Fake Company, Inc. | This is a portfolio project with fictionalized content."
+footer_content: "© 2026 Fake Company, Inc. | This is a portfolio project with fictionalized content."
 
 # Aux links (top right navigation)
 aux_links:
