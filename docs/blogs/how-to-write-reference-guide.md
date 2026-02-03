@@ -7,9 +7,14 @@ nav_order: 3
 
 # How to Write a Reference Guide for a Financial Process Responsible for Millions of Dollars
 
+![Money-money, money-money, MONEY!](../../static/img/money-money.png)
+
 ## Description and Objective
 
-This piece reflects on creating operational documentation for the Monthly Invoicing Process (MIP) while working as a bootcamp graduate on a financial systems engineering team. The goal is to share lessons learned about consolidating scattered tacit knowledge into searchable, maintainable documentation that serves both current team members and future engineers.
+This piece reflects on creating operational documentation for a colossal monthly-invoicing
+process while working as a bootcamp-grad on a fintech engineering team. The goal is to
+share lessons learned about consolidating scattered, tacit knowledge into searchable,
+maintainable documentation that serves both current team members and future engineers.
 
 ---
 
@@ -32,7 +37,7 @@ Don't get me wrong. I love mob programming, there are so many benefits. I like b
 **But here's the thing: they were mobbing, but they weren't documenting.**
 
 This system fell apart during high-traffic periods of heightened monitoring and processing.
-The information I needed to successfully support the org's MIP, _Monthly Invoicing Process_, was
+The information I needed to successfully support the org's MIP, _monthly-invoicing process_, was
 scattered across:
 
 - Years of Slack conversations in multiple channels, some of them archived
