@@ -7,4 +7,7 @@ has_children: true
 
 # Blogs
 
-Technical writing and best practices from the Platform Engineering Guild.
+Anti-patterns, best practices, and practical guides for writing
+maintainable code and documentation.
+
+![Future-You Will Thank You](../../static/img/future-you-will-thank-you.png)
