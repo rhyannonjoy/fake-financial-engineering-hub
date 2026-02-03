@@ -6,87 +6,44 @@ description: "Technical documentation for financial systems engineering at Fake 
 permalink: /
 ---
 
-# Financial Engineering Resource Hub
-{: .fs-9 }
+# Fake Financial Engineering Hub
 
-Technical documentation for engineers working on financial systems, with a focus on invoicing, billing, and payment infrastructure.
-{: .fs-6 .fw-300 }
+I'm Rhyannon ("ree-ann-en" or "rhythm" + "Shannon"). This is a portfolio project showcasing the
+docs-fever I developed as an engineering-bootcamp grad baptized by fire in the
+fintech org of a company that was frankly, _too big_. The "future-you will thank you"
+philosophy runs through everything here: _write for the engineer with no context,
+because future-you won't remember either_.
 
-[Get Started with Onboarding](docs/onboarding/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View on GitHub](https://github.com/rhyannonjoy/fake-financial-engineering-hub){: .btn .fs-5 .mb-4 .mb-md-0 }
-
----
-
-{: .warning }
-> **Portfolio Project Notice**
->
-> This is a practice documentation site created for portfolio purposes. All company names, system details, and data have been sanitized or fictionalized. The patterns and approaches reflect real-world engineering practices.
-
-## Overview
-
-Welcome to the Financial Engineering Resource Hub – a collection of technical documentation for engineers working on financial systems at **Fake Company, Inc.**, with a primary focus on our **Invoicing Platform Service (IPS)** and related billing infrastructure.
-
-This site demonstrates how to document complex financial systems, onboard new engineers, and maintain operational knowledge for business-critical services.
-
-## What's Inside
-
-### 🏗️ System Architecture
-High-level overviews of our invoicing and billing systems, including service dependencies, data flows, and integration patterns.
-
-[Explore Architecture →](docs/architecture/)
-
-### 📚 Onboarding Guides  
-Resources for new engineers joining the financial systems team, including setup instructions, team processes, and key concepts.
-
-[Start Onboarding →](docs/onboarding/)
-
-### 🔧 Runbooks
-Operational procedures and incident response guides, including the Developer First Responder (DFR) rotation and common troubleshooting steps.
-
-[View Runbooks →](docs/runbooks/)
-
-### 🔌 API Documentation
-Service contracts, endpoints, and integration patterns for working with our invoicing and payment APIs.
-
-[Browse API Docs →](docs/api/)
-
-### 🐛 Troubleshooting
-Common issues and their resolutions, debug guides, and known system quirks.
-
-[Find Solutions →](docs/troubleshooting/)
-
-### 📋 Design Decisions (ADRs)
-Architecture Decision Records explaining key technical choices and their rationale.
-
-[Read ADRs →](docs/adr/)
+![Future-You Will Thank You - Yellow](./static/img/future-you-will-thank-you-yellow.png)
 
 ---
 
-## Quick Links
+## Fake Financial What?
 
-**New to the team?** Start with the [New Engineer Onboarding Guide](docs/onboarding/new-engineer-guide.html)
+This site contains blogs and documentation I wrote to demonstrate:
 
-**On DFR rotation this week?** Check the [DFR Checklist](docs/runbooks/dfr-checklist.html)
+- **Code Quality Standards** - anti-patterns like magic numbers and lack of documentation
+- **Documentation Practices** - how to write reference guides for complex financial processes
+- **Technical Teaching** - how to effectively teach other engineers
 
-**Responding to an incident?** Jump to [Incident Response Runbook](docs/runbooks/incident-response.html)
-
-**Need API details?** Browse the [API Reference](docs/api/)
-
----
-
-## About This Project
-
-This documentation hub showcases:
-
-- **Operational documentation** for on-call engineers and support teams
-- **Onboarding materials** to accelerate new team member ramp-up
-- **System architecture** documentation for complex financial services
-- **API documentation** following industry best practices
-- **Decision records** capturing technical choices and trade-offs
-
-The content reflects patterns commonly found in fintech and e-commerce engineering organizations managing high-volume transaction processing systems.
+All content is based on real engineering experience but sanitized for portfolio
+purposes. Company names, system details, and data _are fictionalized_.
 
 ---
 
-{: .note }
-Have feedback or questions? This is a portfolio project by [Rhyannon Joy Rodriguez](https://github.com/rhyannonjoy). Check out the [GitHub repository](https://github.com/rhyannonjoy/fake-financial-engineering-hub) to see how this documentation is structured.
+## Blogs
+
+Read about engineering best practices, documentation anti-patterns, and lessons learned:
+
+- [Anti-pattern: Lack of Documentation and Comments](docs/blogs/antipattern-doc-comments.md)
+- [Anti-pattern: Magic Numbers](docs/blogs/antipattern-magic-numbers.md)
+- [How to Write a Reference Guide for a Financial Process Responsible for Millions of Dollars](docs/blogs/invoicing-reference-guide-blog.md)
+
+## Reference Documentation
+
+Examples of operational documentation for financial systems:
+
+- [DFR Checklist](docs/dfr-checklist.md) - Developer First Responder procedures
+- [Invoicing Reference Guide](docs/invoicing-reference-guide.md) - Comprehensive monthly-invoicing process handbook
+
+---
