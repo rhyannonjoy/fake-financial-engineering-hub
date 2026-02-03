@@ -24,17 +24,15 @@ This piece reflects on creating operational documentation for the Monthly Invoic
 
 ## The Problem: We Have Information, Just Not Where We Need It
 
-Now that I've typed out "millions of dollars," it doesn't feel like very much, but when you're an intern fresh out of a bootcamp, you don't want to break stuff that costs the company millions of dollars. I was hired and plopped into a financial systems engineering team that spoke entirely in acronyms. Everything was new. The team swam in tickets, held [mob programming](https://en.wikipedia.org/wiki/Team_programming#Mob_programming)
+Now that I've typed out "millions of dollars," it doesn't feel like very much, but when you're an intern fresh out of a bootcamp, you don't want to break stuff that costs the company _anything_. I was hired and plopped into a fintech engineering team that spoke entirely in acronyms. Everything was new. The team swam in tickets, held [mob programming](https://en.wikipedia.org/wiki/Team_programming#Mob_programming)
 sessions daily, and solved problems as a group. It was very dreamy — at first.
 
-Don't get me wrong. I love mob programming, there are so many benefits. I'm too nosy to code in isolation.
-I like building things, breaking things, chatting about things, breaking them again, fixing them, then breaking again, with others. Mob programming is a great way to prevent knowledge silos and speed-up feedback loops.
-Your tickets won't get stuck in review or verification stages because everyone's already up-to-speed from whatever session was held that day.
+Don't get me wrong. I love mob programming, there are so many benefits. I like building things, breaking things, chatting about things, _breaking them again_, fixing them, then _breaking again_ -- with others. I'm too nosy to code in isolation. Mob programming is also a great way to prevent knowledge silos and speed-up feedback loops. Your tickets won't get stuck in review or verification stages because everyone's already up-to-speed from whatever session was held that day.
 
 **But here's the thing: they were mobbing, but they weren't documenting.**
 
 This system fell apart during high-traffic periods of heightened monitoring and processing.
-The information I needed to successfully support the org's MIP, _Monthly Invoicing Process_ was
+The information I needed to successfully support the org's MIP, _Monthly Invoicing Process_, was
 scattered across:
 
 - Years of Slack conversations in multiple channels, some of them archived
@@ -87,7 +85,7 @@ Each MIP cycle meant rediscovering the same information. Senior engineers would 
    - Code comments that explained "why" better than docs did
    - Ticket templates that captured common remediation steps
 
-   Most of this documentation was good, it just wasn't _discoverable_. A `README` buried in a subdirectory of a rarely-touched repository might as well not exist.
+   Most of this documentation was good, it just wasn't _discoverable_. A README buried in a subdirectory of a ragamuffin-repository might as well not exist.
 
 2. **Mine the Slack History**
 
@@ -117,12 +115,12 @@ Each MIP cycle meant rediscovering the same information. Senior engineers would 
 
    I organized the guide around the DFR's workflow:
 
-   1. **Pre-MIP**: What to prepare before the process starts
-   2. **Monitor**: Where to look and what normal looks like
-   3. **Investigate**: Queries and techniques for diagnosing issues
-   4. **Remediate**: Step-by-step instructions for common fixes
-   5. **Communicate**: When and how to update stakeholders
-   6. **Post-MIP**: Cleanup tasks and retrospective items
+   - **Pre-MIP**: What to prepare before the process starts
+   - **Monitor**: Where to look and what normal looks like
+   - **Investigate**: Queries and techniques for diagnosing issues
+   - **Remediate**: Step-by-step instructions for common fixes
+   - **Communicate**: When and how to update stakeholders
+   - **Post-MIP**: Cleanup tasks and retrospective items
 
    Each section answered a specific question an engineer would have at that stage of the process. The table of contents became a troubleshooting flowchart.
 
@@ -167,7 +165,7 @@ Each MIP cycle meant rediscovering the same information. Senior engineers would 
 
    Abstract instructions like "check for anomalies in the invoice creation rate" meant nothing to a new engineer. Concrete examples helped:
 
-   - "Current benchmark is `24.55 inv/s`. If it falls below `10 inv/s` during non-business hours, investigate."
+   - "Current benchmark is 24.55 inv/s. If it falls below 10 inv/s during non-business hours, investigate."
    - "Generally expect speed to slow down during American business hours."
    - "Last MIP, the Postpay Invoices Remaining graph stabilized at 1."
 

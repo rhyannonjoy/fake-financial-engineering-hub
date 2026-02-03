@@ -88,7 +88,7 @@ This piece was a contribution to the Platform Engineering Guild's initiative to 
    // JavaScript front-end validation
    ```
 
-   These `TODO` tasks are marginally more valuable than the first. We have some direction, but no meaningful explanation as to why the current implementation is not preferred. We’ve made the effort to create a `TODO` task without successfully passing responsibility. The codebase is now littered with orphaned `TODO` tasks, creating unnecessary IDE warning noise, making identifying and solving bugs harder. Documentation smells like
+   These TODO tasks are marginally more valuable than the first. We have some direction, but no meaningful explanation as to why the current implementation is not preferred. We’ve made the effort to create a TODO task without successfully passing responsibility. The codebase is now littered with orphaned TODO tasks, creating unnecessary IDE warning noise, making identifying and solving bugs harder. Documentation smells like
    this can snowball fast. Outdated service documentation recently led to an internal event, which introduced breaking changes to 162+ projects.
 
 ---
@@ -101,12 +101,12 @@ This piece was a contribution to the Platform Engineering Guild's initiative to 
    - Even if future-you remembers, stop putting pressure on yourself to become a code librarian, so that you can allot your time to more complex problems.
 2. **Be decisive, don't leave strays.**
    - Write kinetically. Write in a way that shares valuable information and passes responsibility. Meaningful comments document the why, not just the what.
-   - If you _must_ create a `TODO` task, use this opportunity to be descriptive in a way that transfers knowledge because “anything you do in a team should follow the needs of that team” ([Martin Fowler, Code As Documentation](https://martinfowler.com/bliki/CodeAsDocumentation.html#:~:text=anything%20you%20do%20in%20a%20team%20should%20follow%20the%20needs%20of%20that%20team)).
-   - A good approach may include adopting a team standard in which a Jira ticket is required in any, and or all `TODO` comments. Consider adding a code review checklist item to examine any comments that could or should be updated.
-   - A better approach might be to never leave `TODO` tasks at all. Either complete the task or finalize the decision not to. If the scope of the change is too much for an immediate resolution, a ticket is a better way to share information and manage change, rather than leave stray comments in the code. A ticket can centralize context, while comments often require imperfect cycles of context reinforcement - where one is forced to learn and relearn context.
+   - If you _must_ create a TODO task, use this opportunity to be descriptive in a way that transfers knowledge because “anything you do in a team should follow the needs of that team” ([Martin Fowler, Code As Documentation](https://martinfowler.com/bliki/CodeAsDocumentation.html#:~:text=anything%20you%20do%20in%20a%20team%20should%20follow%20the%20needs%20of%20that%20team)).
+   - A good approach may include adopting a team standard in which a Jira ticket is required in any, and or all TODO comments. Consider adding a code review checklist item to examine any comments that could or should be updated.
+   - A better approach might be to never leave TODO tasks at all. Either complete the task or finalize the decision not to. If the scope of the change is too much for an immediate resolution, a ticket is a better way to share information and manage change, rather than leave stray comments in the code. A ticket can centralize context, while comments often require imperfect cycles of context reinforcement - where one is forced to learn and relearn context.
 3. **Aim to be concise.**
    - Good code should document itself, but that becomes a challenge when you’re working with legacy systems that require explanation for complex business processes or distinctive legal constraints. If possible, suggest refactoring to make the code itself more clear to eliminate the need for inline comments as documentation. It is often enough to extract a method with a meaningful name to expose the information you might otherwise put into a comment.
-   - After considering refactoring, if you think inline comments are necessary, focus on the why and allow the code to speak for itself to explain the how. If staying concise is a challenge, consider a different approach to documenting the information. Could this information live among your team’s internal documentation, repository `README`, or external service documentation? Inline comments with too much information can very easily go from helpful to not.
+   - After considering refactoring, if you think inline comments are necessary, focus on the why and allow the code to speak for itself to explain the how. If staying concise is a challenge, consider a different approach to documenting the information. Could this information live among your team’s internal documentation, repository README, or external service documentation? Inline comments with too much information can very easily go from helpful to not.
    - Finding the right balance just takes regular maintenance cadences. Aim to include necessary refactoring, read good docs, have others review your docs, remain open to feedback that improves user-friendliness and practicality.
 4. **Adopt tools that help you build a solid documentation practice.**
    - Harness the power of your IDE and don’t ignore the warnings.
@@ -117,9 +117,9 @@ This piece was a contribution to the Platform Engineering Guild's initiative to 
 
 ### Examples of the Best Patterns
 
-If you’re writing a repository `README`, aim to be comprehensive but not exhaustive. Strive to create a user-friendly onboarding experience. Include an introduction to the project with visuals and text. Offer clarity around various entry points such as quickly contributing code and how one might respond to an outage. Seek to produce content that remains practical and lean circumstantially agnostic. Ensure that if you’re new to the project, this content is a great place to start and that if you’re a site reliability engineer responding to an issue, this is also a great place to start.
+If you’re writing a repository README, aim to be comprehensive but not exhaustive. Strive to create a user-friendly onboarding experience. Include an introduction to the project with visuals and text. Offer clarity around various entry points such as quickly contributing code and how one might respond to an outage. Seek to produce content that remains practical and lean circumstantially agnostic. Ensure that if you’re new to the project, this content is a great place to start and that if you’re a site reliability engineer responding to an issue, this is also a great place to start.
 
-Sweat the small stuff and acknowledge system limits. Notice that the documentation below offers meaningful direction because it is not unnecessarily abstract and is descriptive of the limitations. Something too concise such as `add the Jenkins user` would not tell us much.
+Sweat the small stuff and acknowledge system limits. Notice that the documentation below offers meaningful direction because it is not unnecessarily abstract and is descriptive of the limitations. Something too concise such as "add the Jenkins user" would not tell us much.
 
 ```markdown
 You will need to type "Jenkins" into the search and scroll down to the
