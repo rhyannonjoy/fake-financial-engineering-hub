@@ -63,6 +63,6 @@ failures by moving problematic accounts to the legacy path for retry.
    Notify financial systems and support and the promotion teams that the promotions
    for these accounts were possibly double-used, see recent example PROMO-3278
 
-5. Let `#ops-eom-supports` know Zuora invoicing has completed
+5. Let `#ops-mip-supports` know Zuora invoicing has completed
 
 ---

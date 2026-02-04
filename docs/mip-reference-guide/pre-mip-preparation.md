@@ -67,16 +67,16 @@ minimize potential issues and ensure successful invoice generation.
 
 Ensure the DFR has proper access to all systems needed for investigation and remediation:
 
-1. **Database Access**
+1. **Internal Databases**
 
-   Confirm access to the team's internal databases -
+   Confirm access to the team's restricted databases -
 
    - **QA**: `invoicingdbtest`
    - **PROD**: `invoicingdb`
 
    For any data changes during MIP, refer to How to Maintain invoicingdb
 
-2. **AWS Components**
+2. **Manual Processes**
 
    Verify DFR can access -
 
@@ -90,7 +90,7 @@ Ensure the DFR has proper access to all systems needed for investigation and rem
 
    - **Datadog**: Invoice creation speed and system health dashboards
    - **Zuora ZIP**: Invoice verification dashboard
-   - **Slack**: `#invoicing-dev` and `#ops-eom-supports` channels
+   - **Slack**: `#invoicing-dev` and `#ops-mip-supports` channels
 
 ---
 

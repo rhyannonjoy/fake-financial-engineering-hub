@@ -29,7 +29,7 @@ didn’t process the response for some reason
 
 ## Where
 
-Post in Slack channel `#ops-eom-supports` and usual contacts include billing, finance,
+Post in Slack channel `#ops-mip-supports` and usual contacts include billing, finance,
 and recon
 
 ## What

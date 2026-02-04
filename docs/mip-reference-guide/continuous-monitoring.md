@@ -27,7 +27,7 @@ Invoicing system
 ## Monitor App
 
 All Invoicing engineers should have access to the Monitor App.
-Tag senior management in Slack channel `#ops-eom-supports` to
+Tag senior management in Slack channel `#ops-mip-supports` to
 enable any required access. This is the same view that Finance
 has, but isn't the absolute source of truth, as discussed in
 the Slack channel `#invoicing-dev`. Track MIP progress by
