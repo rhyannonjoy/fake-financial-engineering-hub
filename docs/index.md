@@ -43,7 +43,7 @@ Read about engineering best practices, documentation anti-patterns, and lessons 
 
 Examples of operational documentation for financial systems:
 
-- [DFR Checklist](docs/dfr-checklist.md) - Developer First Responder procedures
-- [Invoicing Reference Guide](docs/invoicing-reference-guide.md) - Comprehensive monthly-invoicing process handbook
+- [DFR Checklist](dfr-checklist.md) - developer first responder procedures
+- [MIP Reference Guide](./mip-reference-guide/index.md) - comprehensive monthly-invoicing process handbook
 
 ---
