@@ -26,7 +26,7 @@ requests.
 
 <div class="mermaid">
 flowchart TD
-    Prep[Pre-MIP Prep<br/>Database Access, Deployment Scheduling]
+    Prep[Pre-MIP Prep<br/>Internal Tools Access, Deployment Scheduling]
     Prep --> Start([MIP Begins])
     Start --> Monitor[Continuously Monitor<br/>Datadog Dashboards, DLQs]
     Monitor --> Check{Issues?}
@@ -51,7 +51,7 @@ flowchart TD
 | Scenario | Action |
 | ---------- | -------- |
 | **MIP starting soon?** | Review [Pre-MIP Preparation](pre-mip-preparation.md) → Verify database access → Discuss deployment schedule |
-| **Invoice creation running slow?** | Check [Continuous Monitoring](continuous-monitoring.md) → Review Datadog Dashboards → Verify creation speed `>10 inv/s` |
+| **Invoice creation running slow?** | Check [Continuous Monitoring](continuous-monitoring.md) → Review Datadog Dashboards → Verify creation speed >10 inv/s |
 | **Messages stuck in DLQ?** | See [Remediation Steps](remediation-steps.md) → Use AWS CLI to redrive messages → Monitor completion |
 | **Failed invoice requests?** | Check [Investigation Techniques](investigation-techniques.md) → Query failed requests → Use retry endpoint |
 | **Zuora-sync issues?** | Follow [Zuora Invoice Verification](zuora-verification.md) → Check ZIP dashboard → Redrive ZIP DLQ |
