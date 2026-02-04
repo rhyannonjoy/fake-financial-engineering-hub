@@ -8,7 +8,7 @@ permalink: /
 
 # Fake Financial Engineering Hub
 
-I'm Rhyannon ("ree-ann-en" or "rhythm" + "Shannon"). This is a portfolio project showcasing the
+I'm Rhyannon ("ree-ann-en" like "rhythm" + "Shannon"). This is a portfolio project showcasing the
 docs-fever I developed as an engineering-bootcamp grad baptized by fire in the
 fintech org of a company that was frankly, _too big_. The "future-you will thank you"
 philosophy runs through everything here: _write for the engineer with no context,
