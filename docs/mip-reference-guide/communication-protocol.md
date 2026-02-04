@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Communication Protocol
-parent: Invoicing Reference Guide
+parent: MIP Reference Guide
 nav_order: 6
 ---
 

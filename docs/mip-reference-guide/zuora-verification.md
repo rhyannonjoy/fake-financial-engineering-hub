@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Zuora Invoice Verification
-parent: Invoicing Reference Guide
+parent: MIP Reference Guide
 nav_order: 3
 ---
 

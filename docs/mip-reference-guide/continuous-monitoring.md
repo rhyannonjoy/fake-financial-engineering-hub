@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Continuous Monitoring
-parent: Invoicing Reference Guide
+parent: MIP Reference Guide
 nav_order: 2
 ---
 

@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Invoicing Reference Guide
+title: MIP Reference Guide
 nav_order: 3
 has_children: true
 ---
 
-# Invoicing Reference Guide
+# MIP Reference Guide
 
-Welcome to the comprehensive operational guide for the
-DFR, _developer first responder_, managing the MIP, _monthly
-invoicing process_. Details include monitoring, remediation,
+Welcome to the comprehensive operational guide for the DFR,
+_developer first responder_, managing the MIP,
+_monthly-invoicing process_. Details include monitoring, remediation,
 and communication procedures throughout the monthly invoice
 generation cycle.
 

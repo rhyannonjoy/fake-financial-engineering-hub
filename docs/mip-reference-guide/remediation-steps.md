@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Remediation Steps
-parent: Invoicing Reference Guide
+parent: MIP Reference Guide
 nav_order: 5
 ---
 
