@@ -337,11 +337,10 @@ respectful of time.
 1. **Teaching IS Engineering Work**
 
     Teaching isn't a nice-to-have skill, it's critical infrastructure.
-    When teams prioritize teaching, everyone ramps up faster,
-    production incidents happen less, and technical debt gets paid
-    through shared understanding. Every task is a teaching opportunity -
-    pull requests, docs, and support questions are all changes to
-    improve collective knowledge.
+    Every pull request, doc, code review, and support question is a
+    teaching opportunity. When teams prioritize teaching, everyone ramps
+    up faster, production incidents happen less, and technical debt gets
+    paid through shared understanding.
 
 2. **Write for the Engineer Who Has No Context**
 
@@ -356,7 +355,7 @@ respectful of time.
     Everyone is busy! Get to the point by showing the solution,
     then explaining the context. Solve real production problems,
     don't linger on abstract theory. Provide multiple paths and
-    accomodate different learning styles. Value everyone's time
+    accommodate different learning styles. Value everyone's time
     by offering short, focused sessions - no one is retaining
     hours of fluff.
 
@@ -370,15 +369,12 @@ respectful of time.
     when the content is proven to be immediately useful, people
     will it take it with them, and actually use it.
 
-5. **Teaching Scales Your Impact**
+5. **You're Already Teaching - Do It Intentionally**
 
     Teaching is a career-long practice, not a role you graduate into.
-    You're already teaching with everything that you do - the question
-    is whether you're teaching clearly or creating confusion.
-    As an IC, your might think your impact is limited by your coding
-    hours, but when you intentionally teach, your teaching multiplies.
-    Every engineer you teach can teach others, every doc you write helps
-    countless engineers, every tutorial prevents infinite confusion, and
-    every mentoring relationship improves both engineers. That's the power
-    of teaching - you transform isolated knowledge into capability that
-    belongs to everyone.
+    You're already teaching with everything you do. The question is
+    whether you're teaching clearly or creating confusion. Your code
+    teaches future maintainers. Your architecture teaches system design.
+    Your reviews teach better practices. Recognizing that teaching is
+    the work, _not extra work_, transforms isolated knowledge into
+    capability that belongs to everyone.
