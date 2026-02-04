@@ -94,14 +94,14 @@ Each MIP cycle meant rediscovering the same information. Senior engineers would 
 
 2. **Mine the Slack History**
 
-   Months of conversations in `#invoicing-dev`, `#ops-eom-supports`, and `#help-datadog` contained gold:
+   Months of conversations in `#invoicing-dev`, `#ops-mip-supports`, and `#help-datadog` contained gold:
 
    - Real problems engineers encountered during past MIPs
    - Solutions that worked, and ones that didn't
    - Edge cases that only surfaced once a year
    - Context about why certain procedures existed
 
-   I searched for keywords like "MIP," "blocked messages," "DLQ," "replication lag," and "Zuora sync." Each relevant thread became a section in the guide.
+   I searched for keywords like "MIP," "blocked messages," "replication lag," and "Zuora-sync." Each relevant thread became a section in the guide.
 
 3. **Consolidate Queries and Commands**
 
