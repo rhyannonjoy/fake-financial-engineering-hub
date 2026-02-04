@@ -4,6 +4,7 @@ title: Post-MIP Tasks
 parent: MIP Reference Guide
 nav_order: 7
 ---
+
 # Post-MIP Tasks
 
 After communicating MIP completion to Finance, complete these
