@@ -20,6 +20,8 @@ necessary, but required manual processes include redriving messages
 from the dead letter queues and retrying failed pending invoice
 requests.
 
+---
+
 ## MIP Workflow Overview
 
 <div class="mermaid">
@@ -41,6 +43,8 @@ flowchart TD
     classDef decision fill:#2d2d2d,stroke:#7dd3fc,stroke-width:3px,color:#fff
     class Check,Complete decision
 </div>
+
+---
 
 ## Quick Reference
 
