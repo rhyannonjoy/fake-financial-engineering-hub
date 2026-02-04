@@ -179,6 +179,11 @@ _must be tracked_
 
 ## Related Documentation
 
+> Note: FFEH is a practice documentation site created
+for portfolio purposes; while the patterns and approaches
+reflect real-world engineering practice, the onboarding
+materials below are fictional
+
 **Essential Resources**:
 
 - How to Create and Maintain API Keys
