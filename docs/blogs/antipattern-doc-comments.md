@@ -7,6 +7,8 @@ nav_order: 1
 
 # Anti-pattern: Lack of Documentation and Comments
 
+![Write For Future-You](../../static/img/write-for-future-you.png)
+
 ## Description and Objective
 
 This piece was a contribution to the Platform Engineering Guild's initiative to set company-wide code and documentation quality standards. The goal is to explain why poor documentation is harmful for codebases and provides actionable recommendations for improvement. The writing process involved gathering existing code quality standards, adapting themes to a blog-like format, and collaborating with engineers across teams.
