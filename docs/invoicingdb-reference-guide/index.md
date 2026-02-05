@@ -5,7 +5,7 @@ nav_order: 3
 has_children: true
 ---
 
-# invoicingdb Reference Guide
+# `invoicingdb` Reference Guide
 
 Welcome to the `invoicingdb` Reference Guide.
 
