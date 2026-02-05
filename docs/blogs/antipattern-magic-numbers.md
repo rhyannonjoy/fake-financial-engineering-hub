@@ -30,7 +30,7 @@ This piece was a contribution to the Platform Engineering Guild's initiative to 
 
    One of the oldest rules of programming, and dating back to the 1960s,
    [“magic numbers”](https://en.wikipedia.org/wiki/Magic_number_%28programming%29#:~:text=This%20has%20been%20referred%20to%20as%20breaking%20one%20of%20the%20oldest%20rules%20of%20programming)
-   refer to hardcoding without explanation. In most cases, magic numbers make programs harder to read and understand because they obscure the developers’ intent in choosing that specific number and or value.
+   refer to hardcoded numbers without explanation. In most cases, magic numbers make programs harder to read and understand because they obscure the developers’ intent in choosing that specific number and/or value.
    Obscuring the intent can also contribute to unnecessary cognitive load; [Cognitive Load Theory](https://en.wikipedia.org/wiki/Cognitive_load) aka [“your brain’s tab limit”](https://guy-oxnb.medium.com/cognitive-load-why-its-destroying-your-code-and-what-to-do-about-it-3c28cc0d3598): one can only consider a certain amount of details at a time. If you “have too many tabs open” you’ll have a harder time completing your intended task.
 
 2. **Errors**
