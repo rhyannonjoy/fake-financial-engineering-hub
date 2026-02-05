@@ -7,6 +7,8 @@ nav_order: 2
 
 # Anti-pattern: Magic Numbers
 
+![Lighten Cognitive Load](../../static/img/lighten-cognitive-load.png)
+
 ## Description and Objective
 
 This piece was a contribution to the Platform Engineering Guild's initiative to set company-wide code and documentation quality standards. The goal is to explain why magic numbers are harmful for codebases and provide actionable recommendations for improvement. The writing process involved gathering existing code quality standards, adapting themes to a blog-like format, and collaborating with engineers across teams.
