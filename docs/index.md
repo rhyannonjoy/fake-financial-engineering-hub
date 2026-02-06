@@ -35,11 +35,11 @@ purposes. Company names, system details, and data _are fictionalized_.
 
 Read about engineering best practices, documentation anti-patterns, and lessons learned:
 
-- [Anti-pattern: Lack of Documentation and Comments](docs/blogs/antipattern-doc-comments.md)
-- [Anti-pattern: Magic Numbers](docs/blogs/antipattern-magic-numbers.md)
-- [Everyone is Busy! A Tech Comm Strategy](docs/blogs/everyone-is-busy.md)
-- [How to Write a Reference Guide for a Financial Process Responsible for Millions of Dollars](docs/blogs/invoicing-reference-guide-blog.md)
-- [Teaching as Engineering Infrastructure](docs/blogs/teaching-as-eng-infrastructure.md)
+- [Anti-pattern: Lack of Documentation and Comments](./blogs/antipattern-doc-comments.md)
+- [Anti-pattern: Magic Numbers](./blogs/antipattern-magic-numbers.md)
+- [Everyone is Busy! A Tech Comm Strategy](./blogs/everyone-is-busy.md)
+- [How to Write a Reference Guide for a Financial Process Responsible for Millions of Dollars](./blogs/how-to-write-reference-guide.md)
+- [Teaching as Engineering Infrastructure](./blogs/teaching-as-eng-infrastructure.md)
 
 ## Reference Documentation
 
