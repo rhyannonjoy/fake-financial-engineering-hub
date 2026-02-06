@@ -37,7 +37,7 @@ Read about engineering best practices, documentation anti-patterns, and lessons 
 
 - [Anti-pattern: Lack of Documentation and Comments](./blogs/antipattern-doc-comments.md)
 - [Anti-pattern: Magic Numbers](./blogs/antipattern-magic-numbers.md)
-- [Everyone is Busy! A Tech Comm Strategy](./blogs/everyone-is-busy.md)
+- [Everyone is Busy! A Docs Strategy](./blogs/everyone-is-busy.md)
 - [How to Write a Reference Guide for a Financial Process Responsible for Millions of Dollars](./blogs/how-to-write-reference-guide.md)
 - [Teaching as Engineering Infrastructure](./blogs/teaching-as-eng-infrastructure.md)
 

@@ -1,20 +1,17 @@
 ---
 layout: default
-title: "Everyone is Busy! A Tech Comm Strategy"
+title: "Everyone is Busy! A Docs Strategy"
 parent: Blogs
 nav_order: 3
 ---
 
-# Everyone is Busy! A Tech Comm Strategy
+# Everyone is Busy! A Docs Strategy
 
 ![Computer is smiling but crying, saying "I'm busy. Please help."](../../static/img/busy-please-help.png)
 
-## Description and Objective
-
-In this piece I reflect on visual representation in tech comm strategy. When do
-you know when to add visual elements to your docs? Let's get back to the heart
-of what tech comm really is: solving problems when someone failed to complete a
-task with just vibes.
+When should you add visual elements to your docs? Let's get back to the
+heart of what tech docs really are: solving problems when someone failed to
+complete a task with just vibes.
 
 There's a big divide between gen-pop docs and developers docs.
 Everyone wants to hear hot takes about how to market to developers - how they're
@@ -24,7 +21,9 @@ or super smart, they're just busy. Everyone is busy!
 
 Good docs respect people's time. Take pointers from software development
 principles - if your code is getting too complex, modularize it. Break it up
-into smaller pieces until it is easier to digest.
+into smaller pieces until it is easier to digest. Visuals are one of the most
+effective ways to do this; they can replace walls of text, isolate complex
+concepts, or provide quick reference points.
 
 ---
 
@@ -56,7 +55,7 @@ special collections archives, I learned that people don't respond well
 to prescribed paths, they want to choose their own adventure.
 
 Forcing everyone into the same linear path of dense text
-creates a traffic jam. People only read docs when there is
+creates a traffic jam. People often only consult docs when they have
 a problem. So solve their problem! Use visuals to keep it scannable,
 actionable, and readable, because most people would rather enjoy
 the thing than get stuck in the docs about the thing.
@@ -294,16 +293,15 @@ problem.
     Respect people's time with clarity. Structure your docs like modular
     code - break it up into smaller pieces until it's easier to digest.
 
-2. **People Only Read Docs When There is a Problem**
+2. **People Often Only Consult Docs When They Have a Problem**
 
     So solve their problem! Frontload the solution, give them the option
     to explore more context if they so choose.
 
-3. **Create Multiple Points of Entry**
+3. **Create Multiple Entry Points**
 
     Readers should be able to jump in anywhere and find what they need.
-    Visual docs creates those entry points. Scannable structure lets people
-    navigate on their terms.
+    Visuals and scannable structure let people navigate on their terms.
 
 4. **Visual > Text When Things Get Long**
 
