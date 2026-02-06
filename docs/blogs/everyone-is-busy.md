@@ -43,12 +43,12 @@ Everyone is busy, context-switching constantly, and just trying
 to solve their immediate problem, not deeply understand the system -
 that might happen later, or over time through solving
 immediate problems over and over. I'm not saying that it's
-ideal, it's just what happens.
+ideal, but it happens.
 
 This echoes my experiences in food and fine arts archiving.
 Chefs always wanted to wax poetically about their precious recipes
 when everything is literally on fire - cool story bro, just give
-me the goods: ingredients, measurements, tools, steps.
+me the goods: ingredients, measurements, steps.
 
 While helping people navigate complex information systems in
 special collections archives, I learned that people don't respond well
@@ -139,7 +139,7 @@ to the docs with a problem to solve:
     Think like a chef reviewing a recipe. You don't need to be sold the
     recipe, you're already using it. You don't need a story about how this dish
     represents the author's childhood in Provence. Visually scannable
-    ingredients, measurements, tools, and steps - that's what engineers want too.
+    ingredients, measurements, and steps - that's what engineers want too.
 
 2. **Scannable = Assume Nobody Reads Top-to-Bottom**
 
@@ -266,16 +266,16 @@ to the docs with a problem to solve:
 | **Visualize** | Add visuals if it's getting long | Diagram, screenshot, table, code sample |
 | **Expand** | Link to deeper content | For people who want/need more |
 
-**Usability Test:** Can a new reader skim it and solve their problem in under 2 minutes?
-If not, iterate.
+**Usability Test:** Can a new reader skim it and solve their problem in
+under 2 minutes? If not, iterate.
 
 ---
 
 ## The Payoff
 
 Good docs aren't always about being comprehensive. It's about being
-useful to someone's who's busy, distracted, and trying to solve a specific
-problem.
+useful to someone's who's busy, distracted, and trying to solve a
+specific problem.
 
 | **Outcome** | **Impact** |
 | ------------- | ----------- |
@@ -312,4 +312,4 @@ problem.
 5. **Everyone Would Rather Enjoy the Thing Than Get Stuck in the Docs About the Thing**
 
     Keep it scannable, actionable, and readable. Like a good recipe:
-    ingredients, measurements, tools, steps. No stories about Provence.
+    ingredients, measurements, steps. No stories about Provence.
