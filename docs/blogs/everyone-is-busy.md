@@ -122,6 +122,11 @@ to the docs with a problem to solve:
     If you "have too many tabs open" - you'll have a harder time
     solving your problem and prose can be a tab multiplier.
 
+    >_Note: This explanation framework uses prose and links (literally
+    more tabs) because it's conceptual, intending to teach why this
+    strategy works - but good docs for problem-solving should
+    default to visual and scannable._
+
     Not everyone's tabs are arranged in the same way either.
     People want to wander and not be lectured at. Visual docs create
     multiple access points and paths. A diagram can help someone
