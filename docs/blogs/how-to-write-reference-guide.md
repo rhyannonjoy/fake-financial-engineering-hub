@@ -2,7 +2,7 @@
 layout: default
 title: "How to Write a Reference Guide for a Financial Process Responsible for Millions of Dollars"
 parent: Blogs
-nav_order: 3
+nav_order: 4
 ---
 
 # How to Write a Reference Guide for a Financial Process Responsible for Millions of Dollars
