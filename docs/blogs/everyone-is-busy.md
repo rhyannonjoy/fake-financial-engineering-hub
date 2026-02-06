@@ -51,14 +51,18 @@ when everything is literally on fire - cool story bro, just give
 me the goods: ingredients, measurements, steps.
 
 While helping people navigate complex information systems in
-special collections archives, I learned that people don't respond well
-to prescribed paths, they want to choose their own adventure.
+special collections archives, I learned that people don't respond
+well to prescribed paths, they want to choose their own adventure.
 
 Forcing everyone into the same linear path of dense text
-creates a traffic jam. People often only consult docs when they have
-a problem. So solve their problem! Use visuals to keep it scannable,
-actionable, and readable, because most people would rather enjoy
-the thing than get stuck in the docs about the thing.
+creates a traffic jam. Good docs are a well-designed highway
+system with clear exits, multiple routes, and signs that tell you
+exactly which lane to take.
+
+People often only consult docs when they have a problem. So solve
+their problem! Use visuals to keep it scannable, actionable, and
+readable, because most people would rather enjoy the thing than get
+stuck in the docs about the thing.
 
 <div class="mermaid">
 sequenceDiagram
