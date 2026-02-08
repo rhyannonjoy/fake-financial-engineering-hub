@@ -27,7 +27,7 @@ This site contains blogs and documentation I wrote to demonstrate:
 - **Technical Teaching** - how to effectively teach other engineers
 
 All content is based on real engineering experience but sanitized for portfolio
-purposes. Company names, system details, and data _are fictionalized_.
+purposes - system details and data _are fictionalized_.
 
 ---
 
@@ -40,12 +40,15 @@ Read about engineering best practices, documentation anti-patterns, and lessons 
 - [Everyone is Busy! A Docs Strategy](./blogs/everyone-is-busy.md)
 - [How to Write a Reference Guide for a Financial Process Responsible for Millions of Dollars](./blogs/how-to-write-reference-guide.md)
 - [Teaching as Engineering Infrastructure](./blogs/teaching-as-eng-infrastructure.md)
+- [Write Once, Brand Many: White-Labeling Docs](./blogs/writing-once-branding-many.md)
 
 ## Reference Documentation
 
 Examples of operational documentation for financial systems:
 
 - [DFR Checklist](dfr-checklist.md) - developer first responder procedures
+- [`invoicingdb` Reference Guide](./invoicingdb-reference-guide/index.md) -
+the what-where-how-why of Invoicing data
 - [MIP Reference Guide](./mip-reference-guide/index.md) - comprehensive monthly-invoicing process handbook
 
 ---
