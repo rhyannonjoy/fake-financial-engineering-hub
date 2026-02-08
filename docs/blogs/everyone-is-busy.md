@@ -10,14 +10,14 @@ nav_order: 3
 ![Computer is smiling but crying, saying "I'm busy. Please help."](../../static/img/busy-please-help.png)
 
 When should you add visual elements to your docs? Let's get back to the
-heart of what tech docs really are: solving problems when someone failed to
+heart of what docs really are: solving problems when someone failed to
 complete a task with just vibes.
 
 There's a big divide between gen-pop docs and developers docs.
-Everyone wants to hear hot takes about how to market to developers - how they're
-_so lazy_ and _so smart_ and _please don't insult their intelligence_. I'm an
-engineer and I'm here to tell you that I don't think engineers are super efficient
-or super smart, they're just busy. Everyone is busy!
+Everyone wants to hear hot takes about how to market to developers - how
+they're _so lazy_ and _so smart_ and _please don't insult their intelligence_.
+I'm an engineer and I'm here to tell you that I don't think engineers are
+super efficient or super smart, they're just busy. Everyone is busy!
 
 Good docs respect people's time. Take pointers from software development
 principles - if your code is getting too complex, modularize it. Break it up
