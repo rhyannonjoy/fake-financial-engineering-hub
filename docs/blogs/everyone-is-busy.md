@@ -5,7 +5,7 @@ parent: Blogs
 nav_order: 3
 ---
 
-# Everyone is Busy! A Docs Strategy
+# Everyone Is Busy! A Docs Strategy
 
 ![Computer is smiling but crying, saying "I'm busy. Please help."](../../static/img/busy-please-help.png)
 
