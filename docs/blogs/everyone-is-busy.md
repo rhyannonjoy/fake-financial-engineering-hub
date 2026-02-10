@@ -13,7 +13,7 @@ When should you add visual elements to your docs? Let's get back to the
 heart of what docs really are: solving problems when someone failed to
 complete a task with just vibes.
 
-There's a big divide between gen-pop docs and developers docs.
+There's a big divide between gen pop docs and developer docs.
 Everyone wants to hear hot takes about how to market to developers - how
 they're _so lazy_ and _so smart_ and _please don't insult their intelligence_.
 I'm an engineer and I'm here to tell you that I don't think engineers are
@@ -25,11 +25,17 @@ into smaller pieces until it is easier to digest. Visuals are one of the most
 effective ways to do this; they can replace walls of text, isolate complex
 concepts, or provide quick reference points.
 
+AI isn't a magic fix that removes the need for clarity. If anything,
+it raises the stakes because now you have two potential points of failure:
+bad docs confusing humans directly and bad docs causing AI to give
+inaccurate answers to humans.
+
 ---
 
 ## In This Post
 
 - [The Problem](#the-problem)
+- [The AI Amplifier](#the-ai-amplifier)
 - [The Strategy](#the-strategy)
 - [The Framework in Practice](#the-framework-in-practice)
 - [The Payoff](#the-payoff)
@@ -66,28 +72,80 @@ stuck in the docs about the thing.
 
 <div class="mermaid">
 sequenceDiagram
-    participant Engineer
+    participant Dev
     participant Docs
 
-    Note over Engineer: Has urgent question:<br/>"What timestamp format?"
+    Note over Dev: "What timestamp format?"
 
-    Engineer->>Docs: Opens docs
-    Docs-->>Engineer: 1. Here's context about timestamps...
-    Note over Engineer: Okay, but where's the answer?
+    Dev->>Docs: Opens docs
+    Docs-->>Dev: 1. Here's context about timestamps...
+    Note over Dev: Okay, but where's the answer?
 
-    Docs-->>Engineer: 2. Background on why timestamps matter...
-    Note over Engineer: Still scrolling...
+    Docs-->>Dev: 2. Background on why timestamps matter...
+    Note over Dev: Still scrolling...
 
-    Docs-->>Engineer: 3. Conceptual explanation of time...
-    Note over Engineer: Gets frustrated
+    Docs-->>Dev: 3. Conceptual explanation of time...
+    Note over Dev: Gets frustrated
 
-    Docs-->>Engineer: 4. Finally! Code sample with format
-    Note over Engineer: Too late, already tried 3 formats
+    Docs-->>Dev: 4. Finally! Code sample with format
+    Note over Dev: Too late, already tried 3 formats
 
-    Docs-->>Engineer: 5. Edge cases and caveats
-    Note over Engineer: Ships something that works<br/>but might break later
+    Docs-->>Dev: 5. Edge cases and caveats
+    Note over Dev: Ships something that works<br/>but might break later
 
-    Note over Engineer,Docs: Result: Problem "solved"<br/>but tech debt created
+    Note over Dev,Docs: Problem "solved"<br/>but tech debt created
+</div>
+
+---
+
+## The AI Amplifier
+
+It's not just busy humans reading your docs, it's busy humans
+using AI to read your docs for them. AI tools are scanning
+your docs the same way any tired human would - looking
+for the answer, not the journey, except AI does it in milliseconds
+across your entire docs site, meaning -
+
+1. **Structure Matters**: AI surfaces what's clear, buries what's vague
+
+    AI rewards structure over prose. If your answer is buried in walls of text,
+    it's more likely to get missed or misinterpreted. If it's frontloaded with
+    clear structure, AI quotes it directly and accurately.
+
+2. **Format Matters**: AI rewards meaningful, dynamic docs
+
+    Descriptive headers complementing actionable visuals - code blocks,
+    diagrams, screenshots, and tables - streamline AI parsing and extraction.
+    Dense paragraphs force AI to guess what's important.
+
+3. **Impact Matters**: AI democratizes unhelpful docs
+
+    Only patient readers would suffer through 800-word timestamp essays before.
+    Now AI summarizes it poorly for everyone, spreading confusion far and wide -
+    _faster_.
+
+<div class="mermaid">
+sequenceDiagram
+    participant Dev as Dev
+    participant AI as AI
+    participant Docs as Docs
+
+    Note over Dev: "How do I format timestamps?"
+
+    Dev->>AI: Ask question
+    AI->>Docs: Scans docs
+    
+    alt Good Docs
+        Docs-->>AI: Clear answer found:<br/>ISO 8601 format with example
+        AI-->>Dev: Accurate, actionable response
+        Note over Dev: Problem solved ✓
+    else Bad Docs
+        Docs-->>AI: Answer buried in prose
+        AI-->>Dev: Vague and/or hallucinated response
+        Note over Dev: Tries wrong format,<br/>creates tech debt
+    end
+
+    Note over Dev,Docs: Structure determines accuracy
 </div>
 
 ---
@@ -96,15 +154,19 @@ sequenceDiagram
 
 **Visual, Scannable, Actionable, Readable**
 
-How do you design docs that respect people's time and
-offer multiple entry points? Here's a framework
-that's ordered by what matters most when people come
-to the docs with a problem to solve:
+How do you design docs that respect people's time, offer multiple entry
+points, and stay effective in an AI-mediated world? Here's a framework that's
+ordered by what matters most when people come to the docs with a problem to
+solve:
 
 1. **Visual = Assume Long Text Blocks Are Invisible**
 
     When docs get long, people's eyes glaze over. That
-    text block might as well not be there.
+    text block might as well not be there. LLMs have the
+    same problem and will extract information more accurately
+    from structured formats than from prose. Whether someone's
+    reading directly or asking AI to summarize, dense text
+    is a liability.
 
     I learned this the hard way when I wrote a procedural guide
     for a database migration - 12 steps in careful prose.
@@ -152,9 +214,10 @@ to the docs with a problem to solve:
 
 2. **Scannable = Assume Nobody Reads Top-to-Bottom**
 
-    Docs need to work for someone who's skimming, searching, or jumping
-    halfway through. People need to be able to access information
-    from wherever they land, and that's almost never from page one.
+    Docs need to work for someone who's skimming, searching, jumping
+    halfway through, or learning how to use AI effectively. People need to
+    be able to access information from wherever they land, and that's almost
+    never from page one.
 
     | **Technique** | **Why It Matters** | **Example** |
     | --------------- | ------------------- | ------------- |
@@ -163,7 +226,7 @@ to the docs with a problem to solve:
     | **Visual Hierarchy** | Create scannable "checkpoints" | Use formatting breaks so someone can land on the section they need |
 
     ```markdown
-    <!-- Top-heavy Prose -->
+    <!-- Top-heavy prose challenges humans and AI -->
     ## Timestamp Handling
 
     Our API uses timestamps in several places. It's important to understand 
@@ -188,7 +251,8 @@ to the docs with a problem to solve:
 
     Special collections researchers usually don't start at Box 1, Folder 1. They
     scan the finding aid, land somewhere interesting, and explore from there.
-    Your docs should work the same way.
+    Your docs should work the same way. Regularly test whether an LLM can extract
+    the correct answer from your docs without hallucinating.
 
 3. **Actionable = Assume Everyone Has a Specific Problem**
 
@@ -198,12 +262,12 @@ to the docs with a problem to solve:
     they need to implement a feature, something broke and they need to fix it.
     Help them fix it.
 
-    | **Technique** | **Why It Matters** | **Example** |
+    | **Technique** | **Why It Matters** | **Example - Human and AI Readers** |
     | --------------- | ------------------- | ------------- |
     | **Start with the task, not the explanation** | People have a specific problem to solve | "To process a refund:" not "Understanding refund processing:" |
-    | **Code Samples Over Prose** | Show don't tell when possible | Working code example beats paragraph explanation |
+    | **Code Samples Over Prose** | Show don't tell when possible | Working code example beats paragraph explanation; AI extracts and modifies working code samples, but can't fix broken concepts |
     | **Copy-paste-friendly Examples** | Let people get started immediately | Real values, not `<YOUR_VALUE_HERE>` |
-    | **Expected Outcomes** | Tell people what success looks like | Show the response they should see when it works |
+    | **Expected Outcomes** | Tell people what success looks like | Show the response they should see when it works; AI uses these to validate its suggestions to users |
 
     ```markdown
     <!-- Top-heavy Prose -->
@@ -246,9 +310,10 @@ to the docs with a problem to solve:
 
 4. **Readable = Everyone's Busy and Tired**
 
-    Cognitive load is real. Someone reading your docs at 2 AM during an incident
-    is not operating at full capacity. Someone reading on their phone while
-    commuting is not either.
+    Cognitive load is real. Whether or not someone is using AI to read your docs
+    at 2 AM during an incident, they're likely not operating at full capacity.
+    Someone reading on their phone while commuting is not either. Aim to make
+    the docs readable for both humans and AI:
 
     | **Technique** | **Why It Matters** | **Example** |
     | --------------- | ------------------- | ------------- |
@@ -259,8 +324,9 @@ to the docs with a problem to solve:
 
     **In Practice**:
 
-    Rarely do readers come to your docs prepared to absorb a novel. They're sleepy,
-    they're context-switching, they're multi-tasking. Make it easy.
+    Rarely do readers come to your docs prepared to absorb a novel. They're
+    context-switching, they're multi-tasking, and probably not a prompt engineer.
+    Whether they're reading directly or asking an LLM for help - make it easy.
 
 ---
 
@@ -283,13 +349,14 @@ under 2 minutes? If not, iterate.
 ## The Payoff
 
 Good docs aren't always about being comprehensive. It's about being
-useful to someone's who's busy, distracted, and trying to solve a
-specific problem.
+useful to someone's who's busy, distracted, trying to solve a
+specific problem, and learning how to use AI to do it:
 
 | **Outcome** | **Impact** |
 | ------------- | ----------- |
 | **Reduced Time-to-Resolution for Common Issues** | Engineers find answers in runbooks faster |
 | **Fewer "How do I...?" questions in Slack** | People self-serve |
+| **AI Accuracy** | When readers ask "How do I ..." AI returns helpful responses instead of hallucinations |
 | **Higher Docs Usage Metrics** | People actually reading what you wrote |
 | **Better Onboarding Experience** | New engineers ramp up independently |
 
@@ -322,3 +389,11 @@ specific problem.
 
     Keep it scannable, actionable, and readable. Like a good recipe:
     ingredients, measurements, steps. No stories about Provence.
+
+6. **Write for AI-Mediated Consumption**
+
+    Whether someone reads your docs directly or asks an AI to summarize them,
+    the same principles apply: clear structure, frontloaded answers, and
+    scannable format. Good docs aren't just AI-friendly, they're AI-proof against
+    bad prompts. Even if someone asks AI a vague question, good docs mean AI can
+    still extract the right answer.
