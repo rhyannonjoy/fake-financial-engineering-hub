@@ -108,7 +108,9 @@ across your entire docs site, meaning -
 
 1. **Structure Matters**: AI surfaces what's clear, buries what's vague
 
-    AI rewards structure over prose. If your answer is buried in walls of text, it's more likely to get missed or misinterpreted. If it's frontloaded with clear structure, AI quotes it directly and accurately.
+    AI rewards structure over prose. If your answer is buried in walls of text,
+    it's more likely to get missed or misinterpreted. If it's frontloaded with
+    clear structure, AI quotes it directly and accurately.
 
 2. **Format Matters**: AI rewards meaningful, dynamic docs
 
@@ -322,7 +324,8 @@ solve:
 
     **In Practice**:
 
-    Rarely do readers come to your docs prepared to absorb a novel. They're context-switching, they're multi-tasking, and probably not a prompt engineer.
+    Rarely do readers come to your docs prepared to absorb a novel. They're
+    context-switching, they're multi-tasking, and probably not a prompt engineer.
     Whether they're reading directly or asking an LLM for help - make it easy.
 
 ---
