@@ -39,6 +39,7 @@ Read about engineering-docs anti-patterns, strategies, and lessons learned:
 - [Anti-pattern: Magic Numbers](./blogs/antipattern-magic-numbers.md)
 - [Everyone Is Busy! A Docs Strategy](./blogs/everyone-is-busy.md)
 - [How to Write a Reference Guide for a Financial Process Responsible for Millions of Dollars](./blogs/how-to-write-reference-guide.md)
+- [No More Gaslight, Gatekeep, Girlboss: An AI-Ready Docs Strategy](./blogs/no-more-gaslight-gatekeep-girlboss.md)
 - [Teaching as Engineering Infrastructure](./blogs/teaching-as-eng-infrastructure.md)
 - [Write Once, Brand Many: White-Labeling Docs](./blogs/writing-once-branding-many.md)
 

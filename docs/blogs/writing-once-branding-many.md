@@ -2,7 +2,7 @@
 layout: default
 title: "Write Once, Brand Many: White-Labeling Docs"
 parent: Blogs
-nav_order: 5
+nav_order: 7
 ---
 
 # Write Once, Brand Many: White-Labeling Docs

@@ -2,7 +2,7 @@
 layout: default
 title: "Teaching as Engineering Infrastructure"
 parent: Blogs
-nav_order: 5
+nav_order: 6
 ---
 
 # Teaching as Engineering Infrastructure
